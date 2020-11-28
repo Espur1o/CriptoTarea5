@@ -74,7 +74,6 @@ for msg in msgs: #msgs[::-1]
             indexend = content.find(">")
             mid = content[indexstart+1:indexend]
             archive.write(str(mid) + '\n')
-            checkMID(pattern,mid)
 archive.close()
 
 arch = open(verify)
